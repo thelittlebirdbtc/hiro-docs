@@ -1,0 +1,21 @@
+[project]
+name = 'sbtc-nft-mint'
+description = ''
+authors = []
+telemetry = true
+cache_dir = '.\.cache'
+
+[[project.requirements]]
+contract_id = 'SM3VDXK3WZZSA84XXFKAFAF15NNZX32CTSG82JFQ4.sbtc-deposit'
+[contracts.sbtc-nft-mint]
+path = 'contracts/sbtc-nft-mint.clar'
+clarity_version = 3
+epoch = 3.1
+[repl.analysis]
+passes = ['check_checker']
+
+[repl.analysis.check_checker]
+strict = false
+trusted_sender = false
+trusted_caller = false
+callee_filter = false
