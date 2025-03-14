@@ -1,0 +1,6 @@
+(define-read-only (calculate-price-per-item (totalPrice uint) (itemCount uint))
+  (if (> itemCount u0)
+    (ok (/ totalPrice itemCount))
+    (err u0)
+  )
+)
